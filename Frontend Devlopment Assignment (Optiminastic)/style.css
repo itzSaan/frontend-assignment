@@ -1,0 +1,144 @@
+:root {
+    --light: #f2f5fd;
+    --pink: #ff2b84;
+    --grey: #666;
+    --black: #111;
+    --bg-sidebar: linear-gradient(to bottom, #8f5dfa, #4f1e7d);
+    --bg-link: linear-gradient(to right, #fff, #dbccf3);       
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 14px;
+    background: var(--light);
+  }
+  
+  .feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+  }
+  
+  /*   Sidebar  */
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--bg-sidebar);
+    z-index: 10000; /* Behind the navbar */    
+  }
+  
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;    
+    height: calc(100vh - .5rem);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  
+  .sidebar .nav-link {
+    font-weight: 400;
+    color: var(--light);
+  }
+  
+  .sidebar .nav-link .nav-icon {
+    filter: grayscale(100%)
+  }
+  
+  .sidebar .nav-link.active {
+    font-weight: 600;
+    background: var(--bg-link);
+    color: var(--pink);
+    border-radius: 4px;
+  }
+
+  
+  .sidebar .nav-link:hover .nav-icon,
+  .sidebar .nav-link.active .nav-icon {
+      filter: none;
+    }
+
+  .sidebar-heading {
+    font-size: .75rem;
+  }
+  
+
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+/* main */
+
+main{    
+    display: block;
+    background-color: var(--light);
+}
+
+.dashboard-nav{     
+     background: var(--light);      
+  }
+
+  #userDropBtn{
+    cursor: pointer;
+  }
+
+  #userDropdown{
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 70px;  
+    display: none;
+  }
+
+  #userDropdown.show{
+    display: block;
+  }
+
+
+.box-shadow{
+    box-shadow: inset 0px -2px #ccc;
+}
+    
+.dashboard-body{
+    background: var(--light);      
+    overflow: auto;
+}
+
+.section-link{
+    color: var(--grey);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1.25rem;
+    cursor: pointer;
+}
+
+.section-link:hover{
+    color: inherit;
+}
+
+.section-link.active{
+    color: var(--pink);
+    border-bottom: 2px solid #ff2b84;
+}
+
+.search-wrap input{
+    font-size: 12px;
+    
+  }
+
+  .search-wrap input:focus{
+    outline: 0;
+  }
+
+  .price{
+    color: var(--pink);
+  }
+
+.btn-sm{
+  font-size: 12px;
+}

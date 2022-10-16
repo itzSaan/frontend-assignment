@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Sangram Kishor">
+    <meta name="description" content="Simple Admin Panel using Bootstrap and feather icons.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">   
+   
+    <title>Admin Panel</title>
+</head>
+<body>
+    <header class="sticky-top bg-light dashboard-nav flex-md-nowrap px-3">
+        <div class="col-md-3 col-lg-2 d-md-block"></div>
+        <div class="dashboard-na bg-light col-md-9 ms-sm-auto col-lg-10 flex-md-nowrap p-0 pt-3">
+            <div class="d-flex justify-content-end flex-wrap flex-md-nowrap align-items-center pb-2 mb-3">             
+                <div id="userDropBtn" class="d-flex align-items-center gap-2 mb-2 mb-md-0"> 
+                    <span class="fw-bold">Mayilsamy</span> 
+                    <img src="./img/avtar64.png" width="48" alt=""> 
+                </div>
+                <div id="userDropdown" class="card">
+                    <div class="card-body">
+                        <ul class="nav">
+                            <li id="menu"  class="nav-item">
+                                <a href="#" onclick="return false;" class="nav-link">
+                                    <span data-feather="log-out"></span>
+                                     Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+            <div class="d-flex box-shadow justify-content-between flex-wrap flex-md-nowrap align-items-center">
+                <div class="d-flex">
+                    <a class="h6 m-0 mb-n1 section-link active">My projects (13)</a>
+                    <a class="h6 m-0 mb-n1 section-link">Explore</a>
+                </div>
+                <div class="search-wrap bg-white ps-2 py-1 rounded d-flex align-items-center gap-1">
+                    <span data-feather="search"></span>
+                    <input type="text" class="form-control border-0 form-control-sm" placeholder="Search Projects">
+                </div>
+            </div> 
+        </div>
+      </header>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky pt-3 sidebar-sticky">
+                <div class="logo-wrap mt-4 mb-5 text-center">
+                    <a href="" class="">
+                        <img src="./img/ux-design.png" alt="">
+                        <a class="fs-5 fw-bold text-white text-decoration-none link-labels">Logo</a>
+                    </a>
+                    </div>
+                <div class="menu-btn mb-5">
+                    <ul class="nav">
+                        <li id="menu"  class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span data-feather="menu"></span>
+                                 <span class="link-labels">Hide Menu</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+              <ul class="nav flex-column gap-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="./img/speedometer.png" class="nav-icon" alt="">
+                    <span class="link-labels">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">
+                    <img src="./img/pantone.png" class="nav-icon" alt="">
+                    <span class="link-labels">Projects</span>                    
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="./img/money-bag.png" class="nav-icon" alt="">
+                     <span class="link-labels">Earning</span> 
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="./img/settings.png" class="nav-icon" alt="">
+                     <span class="link-labels">Profile</span> 
+                </a>
+            </li>              
+        </ul>
+        
+        <h6 class="sidebar-heading px-3 mt-4 mb-3">
+            <span class="text-light">Support</span>  
+        </h6>
+        <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="./img/ticket.png" class="nav-icon" alt="">
+                     <span class="link-labels">Tickets</span>   <span class="badge text-bg-success">5</span>
+                  </a>
+                </li>               
+              </ul>
+            </div>
+          </nav>
+      
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="row dashboard-body py-4">                
+                <div class="col-sm-4">
+                    <div class="card mb-4">
+                      <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center mb-3">
+                             <img src="./img/oyo.png"  alt="OYO"> 
+                             <a href="#" class="btn btn-sm btn-outline-success">Submit Work</a>
+                          </div>
+                          <div class="d-flex justify-content-between align-items-center gap-3">
+                             <div>
+                                 <h6 class="card-title fw-bold">Diwali Campaign</h6>
+                                 <small class="card-text">This is a campaign to create a stunning videos from the boutique...</small>
+                             </div>
+                              <div class="price d-flex align-items-end">
+                                  <span class="rupee-symbol p-1">₹</span>
+                                  <span class="fs-5 fw-bold">2500</span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+               </div>
+
+               <div class="col-sm-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                         <img src="./img/oyo.png"  alt="OYO"> 
+                         <a href="#" class="btn btn-sm btn-outline-success">Submit Work</a>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center gap-3">
+                         <div>
+                             <h6 class="card-title fw-bold">Diwali Campaign</h6>
+                             <small class="card-text">This is a campaign to create a stunning videos from the boutique...</small>
+                         </div>
+                          <div class="price d-flex align-items-end">
+                              <span class="rupee-symbol p-1">₹</span>
+                              <span class="fs-5 fw-bold">2500</span>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+           </div>
+
+           <div class="col-sm-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                     <img src="./img/oyo.png"  alt="OYO"> 
+                     <a href="#" class="btn btn-sm btn-outline-success">Submit Work</a>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center gap-3">
+                     <div>
+                         <h6 class="card-title fw-bold">Diwali Campaign</h6>
+                         <small class="card-text">This is a campaign to create a stunning videos from the boutique...</small>
+                     </div>
+                      <div class="price d-flex align-items-end">
+                          <span class="rupee-symbol p-1">₹</span>
+                          <span class="fs-5 fw-bold">2500</span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+       </div>
+
+       <div class="col-sm-4">
+        <div class="card mb-4">
+          <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                 <img src="./img/oyo.png"  alt="OYO"> 
+                 <a href="#" class="btn btn-sm btn-outline-success">Submit Work</a>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-3">
+                 <div>
+                     <h6 class="card-title fw-bold">Diwali Campaign</h6>
+                     <small class="card-text">This is a campaign to create a stunning videos from the boutique...</small>
+                 </div>
+                  <div class="price d-flex align-items-end">
+                      <span class="rupee-symbol p-1">₹</span>
+                      <span class="fs-5 fw-bold">2500</span>
+                  </div>
+              </div>
+          </div>
+        </div>
+   </div>
+
+   <div class="col-sm-4">
+    <div class="card mb-4">
+      <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <img src="./img/oyo.png"  alt="OYO"> 
+             <a href="#" class="btn btn-sm btn-outline-success">Submit Work</a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center gap-3">
+             <div>
+                 <h6 class="card-title fw-bold">Diwali Campaign</h6>
+                 <small class="card-text">This is a campaign to create a stunning videos from the boutique...</small>
+             </div>
+              <div class="price d-flex align-items-end">
+                  <span class="rupee-symbol p-1">₹</span>
+                  <span class="fs-5 fw-bold">2500</span>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="col-sm-4">
+    <div class="card mb-4">
+      <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <img src="./img/oyo.png"  alt="OYO"> 
+             <a href="#" class="btn btn-sm btn-outline-success">Submit Work</a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center gap-3">
+             <div>
+                 <h6 class="card-title fw-bold">Diwali Campaign</h6>
+                 <small class="card-text">This is a campaign to create a stunning videos from the boutique...</small>
+             </div>
+              <div class="price d-flex align-items-end">
+                  <span class="rupee-symbol p-1">₹</span>
+                  <span class="fs-5 fw-bold">2500</span>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="col-sm-4">
+    <div class="card mb-4">
+      <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <img src="./img/oyo.png"  alt="OYO"> 
+             <a href="#" class="btn btn-sm btn-outline-success">Submit Work</a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center gap-3">
+             <div>
+                 <h6 class="card-title fw-bold">Diwali Campaign</h6>
+                 <small class="card-text">This is a campaign to create a stunning videos from the boutique...</small>
+             </div>
+              <div class="price d-flex align-items-end">
+                  <span class="rupee-symbol p-1">₹</span>
+                  <span class="fs-5 fw-bold">2500</span>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="col-sm-4">
+    <div class="card mb-4">
+      <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <img src="./img/oyo.png"  alt="OYO"> 
+             <a href="#" class="btn btn-sm btn-outline-success">Submit Work</a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center gap-3">
+             <div>
+                 <h6 class="card-title fw-bold">Diwali Campaign</h6>
+                 <small class="card-text">This is a campaign to create a stunning videos from the boutique...</small>
+             </div>
+              <div class="price d-flex align-items-end">
+                  <span class="rupee-symbol p-1">₹</span>
+                  <span class="fs-5 fw-bold">2500</span>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="col-sm-4">
+    <div class="card mb-4">
+      <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <img src="./img/oyo.png"  alt="OYO"> 
+             <a href="#" class="btn btn-sm btn-outline-success">Submit Work</a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center gap-3">
+             <div>
+                 <h6 class="card-title fw-bold">Diwali Campaign</h6>
+                 <small class="card-text">This is a campaign to create a stunning videos from the boutique...</small>
+             </div>
+              <div class="price d-flex align-items-end">
+                  <span class="rupee-symbol p-1">₹</span>
+                  <span class="fs-5 fw-bold">2500</span>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="col-sm-4">
+    <div class="card mb-4">
+      <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <img src="./img/oyo.png"  alt="OYO"> 
+             <a href="#" class="btn btn-sm btn-outline-success">Submit Work</a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center gap-3">
+             <div>
+                 <h6 class="card-title fw-bold">Diwali Campaign</h6>
+                 <small class="card-text">This is a campaign to create a stunning videos from the boutique...</small>
+             </div>
+              <div class="price d-flex align-items-end">
+                  <span class="rupee-symbol p-1">₹</span>
+                  <span class="fs-5 fw-bold">2500</span>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="col-sm-4">
+    <div class="card mb-4">
+      <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <img src="./img/oyo.png"  alt="OYO"> 
+             <a href="#" class="btn btn-sm btn-outline-success">Submit Work</a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center gap-3">
+             <div>
+                 <h6 class="card-title fw-bold">Diwali Campaign</h6>
+                 <small class="card-text">This is a campaign to create a stunning videos from the boutique...</small>
+             </div>
+              <div class="price d-flex align-items-end">
+                  <span class="rupee-symbol p-1">₹</span>
+                  <span class="fs-5 fw-bold">2500</span>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="col-sm-4">
+    <div class="card mb-4">
+      <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <img src="./img/oyo.png"  alt="OYO"> 
+             <a href="#" class="btn btn-sm btn-outline-success">Submit Work</a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center gap-3">
+             <div>
+                 <h6 class="card-title fw-bold">Diwali Campaign</h6>
+                 <small class="card-text">This is a campaign to create a stunning videos from the boutique...</small>
+             </div>
+              <div class="price d-flex align-items-end">
+                  <span class="rupee-symbol p-1">₹</span>
+                  <span class="fs-5 fw-bold">2500</span>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="col-sm-4">
+    <div class="card mb-4">
+      <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <img src="./img/oyo.png"  alt="OYO"> 
+             <a href="#" class="btn btn-sm btn-outline-success">Submit Work</a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center gap-3">
+             <div>
+                 <h6 class="card-title fw-bold">Diwali Campaign</h6>
+                 <small class="card-text">This is a campaign to create a stunning videos from the boutique...</small>
+             </div>
+              <div class="price d-flex align-items-end">
+                  <span class="rupee-symbol p-1">₹</span>
+                  <span class="fs-5 fw-bold">2500</span>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+              </div>
+      
+           
+          </main>
+        </div>
+      </div>
+
+      <!-- Icons -->
+    <script src="feather-min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+    <!-- custom js -->
+    <script src="scripts.js"></script>
+       <!-- bootstrap bundle js -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+      </body>
+      </html>
